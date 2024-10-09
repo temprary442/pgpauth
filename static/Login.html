@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <h1>
+            Login
+        </h1>
+        <span>
+            Encrypt the following with the server's <a href="./key.pub"></a>
+        </span><br>
+        <span>
+            By using the following command `gpg -a -u [your_private_key] --sign -r [server's_public_key] -e [the_content_to_encrypt]`
+        </span><br>
+        <br>
+        <span>Hallo world !</span><br>
+        <form id="form"><br>
+            <span id="info"></span><br>
+            <input type="text" id="fingerprint"><br>
+            <textarea id="input" placeholder="Enter Your Digest"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>
+            Or Scan This QRcode
+        </h3>
+        <div id="qrcode">
+        </div>
+    </body>
+
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script src="./login.js"></script>
+
+    </script>
+</html>

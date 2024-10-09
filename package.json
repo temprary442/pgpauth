@@ -1,0 +1,22 @@
+{
+  "name": "pgp_auth_alternative",
+  "version": "1.0.0",
+  "description": "PGP authentification",
+  "main": "index.js",
+  "scripts": {
+    "test": "node auth.js"
+  },
+  "keywords": [
+    "PGP",
+    "auth",
+    "api",
+    "web"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "openpgp": "^5.11.2"
+  }
+}
